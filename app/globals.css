@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --font: 'Kanit', sans-serif;
+  }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.magneto {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pos_center{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
