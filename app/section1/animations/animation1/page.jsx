@@ -23,19 +23,23 @@ function Page() {
 
     setTl(timeline);
 
-     gsap.to('#title', {
-      opacity: 1,
-      y: 200,
-      duration: 2,
-      ease: 'elastic'
-    })
-
+   
     return () => {
       timeline.kill();
     };
 
    
   }, [pos]);
+
+  useEffect(() => {
+    gsap.to("#title", {
+      opacity: 1,
+      y: 200,
+      duration: 2,
+      ease: "elastic",
+    });
+
+}, [])
 
   const handleControlClick = (e) => {
   const controler = e.currentTarget.id;
